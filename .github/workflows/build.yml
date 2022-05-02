@@ -38,7 +38,7 @@ jobs:
           file: ./dockerfile
           platforms: linux/amd64,linux/arm64/v8,linux/arm/v7
           push: true
-          tags: ghcr.io/${{ secrets.GHCR_USER }}/alpine-myip
+          tags: ghcr.io/gornius/alpine-myip
           cache-from: type=local,src=/tmp/.buildx-cache
           cache-to: type=local,dest=/tmp/.buildx-cache-new,mode=max
 
